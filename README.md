@@ -237,7 +237,7 @@ LGHeaderCube-LGArticleCube-LGPicCube-LGVideoCube-LGHotCommentCube-LGBottomCube
 @end
 
 ```
-最后 YPPCubeTable 还非常贴心的给出了通信方案. cube 中的事件, 可以分方便的发送到 cellViewModel 中处理, 一个图片 cube 的代码如下
+最后 YPPCubeTable 还非常贴心的给出了通信方案. cube 中的事件, 可以方便的发送到 cellViewModel 中处理, 一个图片 cube 的代码如下
 
 ```objc
 // 图片cube 接收数据, 生成 9 宫格
