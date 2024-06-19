@@ -1,0 +1,6 @@
+framework module YPPCube {
+  umbrella header "YPPCube-umbrella.h"
+
+  export *
+  module * { export * }
+}

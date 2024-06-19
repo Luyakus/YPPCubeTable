@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "YPPCubeConst.h"
+#import <YPPCube/YPPCubeConst.h>
 #import "YPPCellCubeAction.h"
 #import "YPPCellCubeRenderModel.h"
 #import "YPPCubeCellLayout.h"

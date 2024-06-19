@@ -1,0 +1,24 @@
+
+# Uncomment the next line to define a global platform for your project
+platform :ios, '11.0'
+  use_frameworks!
+
+target 'YPPCubeTableDemo' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  pod 'YYModel'
+  pod 'YYText'
+  pod 'YYWebImage'
+  pod 'YYImage'
+  pod 'Masonry'
+  pod 'YPPCube',  :git => 'https://github.com/Luyakus/YPPCube.git'
+  pod 'YPPCubeTable', :path => '..'
+
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings["IPHONEOS_DEPLOYMENT_TARGET"] = "11.0"
+    end
+  end
+end

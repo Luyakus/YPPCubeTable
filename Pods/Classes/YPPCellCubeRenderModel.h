@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import "YPPCellCubeAction.h"
-#import "ReactiveCocoa.h"
+#import <ReactiveCocoa/ReactiveCocoa.h>
 NS_ASSUME_NONNULL_BEGIN
 
 @interface YPPCellCubeRenderModel : NSObject

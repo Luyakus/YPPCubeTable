@@ -29,8 +29,8 @@
 - (void)bindViewModel:(YPPCubeCellViewModel *)model {
     [self.groupCube.cubes enumerateObjectsUsingBlock:^(YPPCube * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         [obj fillData:[model dataForTargetCube:NSStringFromClass(obj.class)]];
+        [obj reload];
     }];
-    [self.groupCube reload];
 }
 
 + (__kindof YPPCubeTableViewCell *)dequeForTableView:(UITableView *)tableView withLayout:(YPPCubeCellLayout *)layout {

@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1FA30E4AD1DFB8D3D8C1030C /* Pods_YPPCubeTableDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A2E35EDD86062688C5B2027 /* Pods_YPPCubeTableDemo.framework */; };
+		28C5463D2C211BB90021AA71 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C5463C2C211BB90021AA71 /* AppDelegate.m */; };
+		28C546482C211BBC0021AA71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28C546472C211BBC0021AA71 /* Assets.xcassets */; };
+		28C5464B2C211BBC0021AA71 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 28C5464A2C211BBC0021AA71 /* Base */; };
+		28C5464E2C211BBC0021AA71 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C5464D2C211BBC0021AA71 /* main.m */; };
+		28C546552C2125240021AA71 /* feeds.json in Resources */ = {isa = PBXBuildFile; fileRef = 28C546542C2125240021AA71 /* feeds.json */; };
+		28C5465A2C21353C0021AA71 /* LGFeedListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C546592C21353C0021AA71 /* LGFeedListController.m */; };
+		28C5465D2C2135530021AA71 /* LGFeedListVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C5465C2C2135530021AA71 /* LGFeedListVM.m */; };
+		28C546602C2136C70021AA71 /* LGFeedListCellVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C5465F2C2136C70021AA71 /* LGFeedListCellVM.m */; };
+		28C546632C2136FC0021AA71 /* LGHeaderCube.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C546622C2136FC0021AA71 /* LGHeaderCube.m */; };
+		28C546662C21375F0021AA71 /* LGPicCube.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C546652C21375F0021AA71 /* LGPicCube.m */; };
+		28C546692C2137720021AA71 /* LGVideoCube.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C546682C2137710021AA71 /* LGVideoCube.m */; };
+		28C5466C2C2137880021AA71 /* LGHotCommentCube.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C5466B2C2137880021AA71 /* LGHotCommentCube.m */; };
+		28C5466F2C2137BB0021AA71 /* LGArticleCube.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C5466E2C2137BB0021AA71 /* LGArticleCube.m */; };
+		28C546722C2137CF0021AA71 /* LGBottomCube.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C546712C2137CF0021AA71 /* LGBottomCube.m */; };
+		28C546752C213D110021AA71 /* LGFeedListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C546742C213D110021AA71 /* LGFeedListModel.m */; };
+		28C546782C2178D20021AA71 /* LGFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C546772C2178D20021AA71 /* LGFPSLabel.m */; };
+		28C5467B2C228D430021AA71 /* UIView+Action.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C5467A2C228D430021AA71 /* UIView+Action.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		079FC791F31341B622AE230C /* Pods-YPPCubeTableDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YPPCubeTableDemo.debug.xcconfig"; path = "Target Support Files/Pods-YPPCubeTableDemo/Pods-YPPCubeTableDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		28C546382C211BB90021AA71 /* YPPCubeTableDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YPPCubeTableDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28C5463B2C211BB90021AA71 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		28C5463C2C211BB90021AA71 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		28C546472C211BBC0021AA71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		28C5464A2C211BBC0021AA71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		28C5464C2C211BBC0021AA71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28C5464D2C211BBC0021AA71 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		28C546542C2125240021AA71 /* feeds.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = feeds.json; sourceTree = "<group>"; };
+		28C546582C21353C0021AA71 /* LGFeedListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGFeedListController.h; sourceTree = "<group>"; };
+		28C546592C21353C0021AA71 /* LGFeedListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGFeedListController.m; sourceTree = "<group>"; };
+		28C5465B2C2135530021AA71 /* LGFeedListVM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGFeedListVM.h; sourceTree = "<group>"; };
+		28C5465C2C2135530021AA71 /* LGFeedListVM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGFeedListVM.m; sourceTree = "<group>"; };
+		28C5465E2C2136C70021AA71 /* LGFeedListCellVM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGFeedListCellVM.h; sourceTree = "<group>"; };
+		28C5465F2C2136C70021AA71 /* LGFeedListCellVM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGFeedListCellVM.m; sourceTree = "<group>"; };
+		28C546612C2136FC0021AA71 /* LGHeaderCube.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGHeaderCube.h; sourceTree = "<group>"; };
+		28C546622C2136FC0021AA71 /* LGHeaderCube.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGHeaderCube.m; sourceTree = "<group>"; };
+		28C546642C21375F0021AA71 /* LGPicCube.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGPicCube.h; sourceTree = "<group>"; };
+		28C546652C21375F0021AA71 /* LGPicCube.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGPicCube.m; sourceTree = "<group>"; };
+		28C546672C2137710021AA71 /* LGVideoCube.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGVideoCube.h; sourceTree = "<group>"; };
+		28C546682C2137710021AA71 /* LGVideoCube.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGVideoCube.m; sourceTree = "<group>"; };
+		28C5466A2C2137880021AA71 /* LGHotCommentCube.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGHotCommentCube.h; sourceTree = "<group>"; };
+		28C5466B2C2137880021AA71 /* LGHotCommentCube.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGHotCommentCube.m; sourceTree = "<group>"; };
+		28C5466D2C2137BB0021AA71 /* LGArticleCube.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGArticleCube.h; sourceTree = "<group>"; };
+		28C5466E2C2137BB0021AA71 /* LGArticleCube.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGArticleCube.m; sourceTree = "<group>"; };
+		28C546702C2137CF0021AA71 /* LGBottomCube.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGBottomCube.h; sourceTree = "<group>"; };
+		28C546712C2137CF0021AA71 /* LGBottomCube.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGBottomCube.m; sourceTree = "<group>"; };
+		28C546732C213D110021AA71 /* LGFeedListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGFeedListModel.h; sourceTree = "<group>"; };
+		28C546742C213D110021AA71 /* LGFeedListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGFeedListModel.m; sourceTree = "<group>"; };
+		28C546762C2178D20021AA71 /* LGFPSLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGFPSLabel.h; sourceTree = "<group>"; };
+		28C546772C2178D20021AA71 /* LGFPSLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGFPSLabel.m; sourceTree = "<group>"; };
+		28C546792C228D430021AA71 /* UIView+Action.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Action.h"; sourceTree = "<group>"; };
+		28C5467A2C228D430021AA71 /* UIView+Action.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Action.m"; sourceTree = "<group>"; };
+		8A2E35EDD86062688C5B2027 /* Pods_YPPCubeTableDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YPPCubeTableDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFF325B821AF91461AA76B5D /* Pods-YPPCubeTableDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YPPCubeTableDemo.release.xcconfig"; path = "Target Support Files/Pods-YPPCubeTableDemo/Pods-YPPCubeTableDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28C546352C211BB90021AA71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FA30E4AD1DFB8D3D8C1030C /* Pods_YPPCubeTableDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28C5462F2C211BB90021AA71 = {
+			isa = PBXGroup;
+			children = (
+				28C5463A2C211BB90021AA71 /* YPPCubeTableDemo */,
+				28C546392C211BB90021AA71 /* Products */,
+				A3E66BC40B100BDB20BDF504 /* Pods */,
+				B76866AD4DB9BA4BFBD9A619 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		28C546392C211BB90021AA71 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28C546382C211BB90021AA71 /* YPPCubeTableDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28C5463A2C211BB90021AA71 /* YPPCubeTableDemo */ = {
+			isa = PBXGroup;
+			children = (
+				28C546572C2135180021AA71 /* Cubes */,
+				28C5463B2C211BB90021AA71 /* AppDelegate.h */,
+				28C5463C2C211BB90021AA71 /* AppDelegate.m */,
+				28C546582C21353C0021AA71 /* LGFeedListController.h */,
+				28C546592C21353C0021AA71 /* LGFeedListController.m */,
+				28C5465B2C2135530021AA71 /* LGFeedListVM.h */,
+				28C5465C2C2135530021AA71 /* LGFeedListVM.m */,
+				28C5465E2C2136C70021AA71 /* LGFeedListCellVM.h */,
+				28C5465F2C2136C70021AA71 /* LGFeedListCellVM.m */,
+				28C546732C213D110021AA71 /* LGFeedListModel.h */,
+				28C546742C213D110021AA71 /* LGFeedListModel.m */,
+				28C546792C228D430021AA71 /* UIView+Action.h */,
+				28C5467A2C228D430021AA71 /* UIView+Action.m */,
+				28C546542C2125240021AA71 /* feeds.json */,
+				28C546472C211BBC0021AA71 /* Assets.xcassets */,
+				28C546492C211BBC0021AA71 /* LaunchScreen.storyboard */,
+				28C5464C2C211BBC0021AA71 /* Info.plist */,
+				28C5464D2C211BBC0021AA71 /* main.m */,
+			);
+			path = YPPCubeTableDemo;
+			sourceTree = "<group>";
+		};
+		28C546572C2135180021AA71 /* Cubes */ = {
+			isa = PBXGroup;
+			children = (
+				28C546612C2136FC0021AA71 /* LGHeaderCube.h */,
+				28C546622C2136FC0021AA71 /* LGHeaderCube.m */,
+				28C546642C21375F0021AA71 /* LGPicCube.h */,
+				28C546652C21375F0021AA71 /* LGPicCube.m */,
+				28C546672C2137710021AA71 /* LGVideoCube.h */,
+				28C546682C2137710021AA71 /* LGVideoCube.m */,
+				28C5466A2C2137880021AA71 /* LGHotCommentCube.h */,
+				28C5466B2C2137880021AA71 /* LGHotCommentCube.m */,
+				28C5466D2C2137BB0021AA71 /* LGArticleCube.h */,
+				28C5466E2C2137BB0021AA71 /* LGArticleCube.m */,
+				28C546702C2137CF0021AA71 /* LGBottomCube.h */,
+				28C546712C2137CF0021AA71 /* LGBottomCube.m */,
+				28C546762C2178D20021AA71 /* LGFPSLabel.h */,
+				28C546772C2178D20021AA71 /* LGFPSLabel.m */,
+			);
+			path = Cubes;
+			sourceTree = "<group>";
+		};
+		A3E66BC40B100BDB20BDF504 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				079FC791F31341B622AE230C /* Pods-YPPCubeTableDemo.debug.xcconfig */,
+				FFF325B821AF91461AA76B5D /* Pods-YPPCubeTableDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B76866AD4DB9BA4BFBD9A619 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A2E35EDD86062688C5B2027 /* Pods_YPPCubeTableDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28C546372C211BB90021AA71 /* YPPCubeTableDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28C546512C211BBC0021AA71 /* Build configuration list for PBXNativeTarget "YPPCubeTableDemo" */;
+			buildPhases = (
+				E379D61CE569FDE7E7C913E0 /* [CP] Check Pods Manifest.lock */,
+				28C546342C211BB90021AA71 /* Sources */,
+				28C546352C211BB90021AA71 /* Frameworks */,
+				28C546362C211BB90021AA71 /* Resources */,
+				1303C5F56BC0A6DCD066923F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YPPCubeTableDemo;
+			productName = YPPCubeTableDemo;
+			productReference = 28C546382C211BB90021AA71 /* YPPCubeTableDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28C546302C211BB90021AA71 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					28C546372C211BB90021AA71 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 28C546332C211BB90021AA71 /* Build configuration list for PBXProject "YPPCubeTableDemo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 28C5462F2C211BB90021AA71;
+			productRefGroup = 28C546392C211BB90021AA71 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28C546372C211BB90021AA71 /* YPPCubeTableDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28C546362C211BB90021AA71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28C546482C211BBC0021AA71 /* Assets.xcassets in Resources */,
+				28C546552C2125240021AA71 /* feeds.json in Resources */,
+				28C5464B2C211BBC0021AA71 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1303C5F56BC0A6DCD066923F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YPPCubeTableDemo/Pods-YPPCubeTableDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YPPCubeTableDemo/Pods-YPPCubeTableDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YPPCubeTableDemo/Pods-YPPCubeTableDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E379D61CE569FDE7E7C913E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YPPCubeTableDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28C546342C211BB90021AA71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28C5467B2C228D430021AA71 /* UIView+Action.m in Sources */,
+				28C546752C213D110021AA71 /* LGFeedListModel.m in Sources */,
+				28C5463D2C211BB90021AA71 /* AppDelegate.m in Sources */,
+				28C546722C2137CF0021AA71 /* LGBottomCube.m in Sources */,
+				28C546692C2137720021AA71 /* LGVideoCube.m in Sources */,
+				28C5465A2C21353C0021AA71 /* LGFeedListController.m in Sources */,
+				28C546662C21375F0021AA71 /* LGPicCube.m in Sources */,
+				28C5464E2C211BBC0021AA71 /* main.m in Sources */,
+				28C546602C2136C70021AA71 /* LGFeedListCellVM.m in Sources */,
+				28C546632C2136FC0021AA71 /* LGHeaderCube.m in Sources */,
+				28C546782C2178D20021AA71 /* LGFPSLabel.m in Sources */,
+				28C5465D2C2135530021AA71 /* LGFeedListVM.m in Sources */,
+				28C5466F2C2137BB0021AA71 /* LGArticleCube.m in Sources */,
+				28C5466C2C2137880021AA71 /* LGHotCommentCube.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		28C546492C211BBC0021AA71 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28C5464A2C211BBC0021AA71 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		28C5464F2C211BBC0021AA71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		28C546502C211BBC0021AA71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		28C546522C211BBC0021AA71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 079FC791F31341B622AE230C /* Pods-YPPCubeTableDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BBH3U98L88;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YPPCubeTableDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sam.www.YPPCubeTableDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		28C546532C211BBC0021AA71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFF325B821AF91461AA76B5D /* Pods-YPPCubeTableDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BBH3U98L88;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YPPCubeTableDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sam.www.YPPCubeTableDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28C546332C211BB90021AA71 /* Build configuration list for PBXProject "YPPCubeTableDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28C5464F2C211BBC0021AA71 /* Debug */,
+				28C546502C211BBC0021AA71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28C546512C211BBC0021AA71 /* Build configuration list for PBXNativeTarget "YPPCubeTableDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28C546522C211BBC0021AA71 /* Debug */,
+				28C546532C211BBC0021AA71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 28C546302C211BB90021AA71 /* Project object */;
+}

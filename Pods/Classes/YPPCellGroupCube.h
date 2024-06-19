@@ -5,7 +5,7 @@
 //  Created by DZ0400843 on 2022/3/14.
 //
 
-#import "YPPGroupCube.h"
+#import <YPPCube/YPPGroupCube.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

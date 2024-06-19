@@ -16,6 +16,6 @@ Pod::Spec.new do |s|
   s.source_files = 'Pods/Classes/**/*.{h,m}'
   
    s.dependency 'YPPCube'
-   s.dependency 'ReactiveCocoa'
+   s.dependency 'ReactiveCocoa', '2.5.0'
 
 end
