@@ -94,7 +94,8 @@ cell 根布局是一个竖向布局容器, 把 cubeRenderModel 对应的 cube, �
 1. cellViewModel 在获得数据时询问自己的 cubeRenderModel 能不能把对应的 cube 渲染出来, 然后把能渲染出来的 cube 的 class 生成 cubeCellLayout, 作为当前 cell 的 reuseIdentifier.
 2. 当 cell 重用时, 会比对需要创建的 cell 的 cubeCellLayout 和已经有的 cubeCellLayout, 如果有能匹配上的, 就使用这个 cubeCellLayout, 然后把对应的 cell 进行重用. 核心代码如下
 
-1. 发生重用
+
+- 发生重用
 ```objc
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     LGFeedListCellVM *cvm = self.vm.cvms[indexPath.row];
@@ -105,7 +106,7 @@ cell 根布局是一个竖向布局容器, 把 cubeRenderModel 对应的 cube, �
 }
 ```
 
-2. 根据 layout 设置 cube
+- 根据 layout 设置 cube
 ```ojbc
 @implementation YPPCubeTableViewCell
 
@@ -128,7 +129,7 @@ cell 根布局是一个竖向布局容器, 把 cubeRenderModel 对应的 cube, �
 @end
 ```
 
-3. 核心重用逻辑
+- 核心重用逻辑
 ```objc
 + (__kindof YPPCubeTableViewCell *)dequeForTableView:(UITableView *)tableView withLayout:(YPPCubeCellLayout *)layout {
     YPPCubeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:layout.identifier];
