@@ -6,10 +6,10 @@ Pod::Spec.new do |s|
   这里是描述
                        DESC
 
-  s.homepage         = 'http://git.yupaopao.com/terminal/ios/component/YPPCubeTable'
+  s.homepage         = 'https://github.com/Luyakus/YPPCubeTable'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'leigaopan' => 'leigaopan@yupaopao.cn' }
-  s.source           = { :git => 'git@git.yupaopao.com:terminal/ios/component/YPPCubeTable.git', :tag => s.version.to_s }
+  s.author           = { '' => '' }
+  s.source           = { :git => 'https://github.com/Luyakus/YPPCubeTable.git'}
 
   s.ios.deployment_target = '10.0'
 
