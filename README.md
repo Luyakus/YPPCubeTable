@@ -60,11 +60,7 @@ YPPCubeTable, 一个可以完美解决上述问题的 feed 流框架. 按照框�
 
 先看效果, 全程 60 帧滑动, 测试设备, iphone 12 mini
 
-<video width="320" height="240" controls>
-  <source src="https://github.com/Luyakus/YPPCubeTable/assets/16056733/4d67561d-cde6-4526-973d-1e91a3b17dec
-  " type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+![](1.webp)
 
 其中最复杂的 cell 类型如下
 
