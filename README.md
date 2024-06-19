@@ -163,8 +163,8 @@ cell 根布局是一个竖向布局容器, 把 cubeRenderModel 对应的 cube, �
 
 @end
 ```
-列表中实际渲染的 cell 类型是上面的实际渲染的最复杂 cell 的任意子集, 其中 header, 文字, footer 是固定元素, 图片, 视频, 热评是可选元素,
-所以实际类型有 C31 + C32 + C33 + 1 = 8 种
+列表中实际渲染的 cell 类型是上面最复杂 cell 的任意子集, 其中 header, 文字, footer 是固定元素, 图片, 视频, 热评是可选元素,
+所以实际类型有 C31 + C32 + C33 + 1 = 8 种.<br>
 代码运行时, 实际创建的 cubeCellLayout 只有 4 中 (根据实际数据决定)
 ```
 LGHeaderCube-LGArticleCube-LGHotCommentCube-LGBottomCube
@@ -174,10 +174,10 @@ LGHeaderCube-LGArticleCube-LGPicCube-LGVideoCube-LGHotCommentCube-LGBottomCube
 ```
 可以看到, 在 YPPCubeTable 的帮助下, 我们既可以获得非常好的性能, 又可以解决传统写法所面临的问题.
 
-一个负责文字渲染的 cube 代码如下<br>
 每个 cube 只负责自己的区域, 更改这个 cube 的代码不会影响其他的 cube. 想增加新的区域也只用新增一个 cube, 
-然后在 cellViewModel 声明一下. 这些特性非常有利于多人协同开发, 非常适合大团队大业务作战.
+然后在 cellViewModel 声明一下. 这些特性非常有利于多人协同开发, 非常适合大团队大业务作战.<br>
 
+一个负责文字渲染的 cube 代码如下<br>
 ```objc
 @interface LGArticleCube()
 @property (nonatomic, strong) UILabel *articleLab;
@@ -237,7 +237,7 @@ LGHeaderCube-LGArticleCube-LGPicCube-LGVideoCube-LGHotCommentCube-LGBottomCube
 @end
 
 ```
-最后 YPPCubeTable 还非常贴心的给出了通信方案, cube 中的事件, 可以分方便的发送到 cellViewModel 中处理, 一个图片 cube 的例子如下
+最后 YPPCubeTable 还非常贴心的给出了通信方案. cube 中的事件, 可以分方便的发送到 cellViewModel 中处理, 一个图片 cube 的代码如下
 
 ```objc
 // 图片cube 接收数据, 生成 9 宫格
