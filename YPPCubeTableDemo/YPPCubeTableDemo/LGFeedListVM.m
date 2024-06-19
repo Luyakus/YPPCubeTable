@@ -23,11 +23,13 @@
 - (NSArray <LGFeedListCellVM *> *)generateCellVMs:(NSString *)jsonStr {
     LGFeedDataModel *m = [LGFeedDataModel yy_modelWithJSON:jsonStr];
     NSMutableArray *arr = @[].mutableCopy;
-    for (NSInteger i = 0; i < 100; i ++) {
+    for (NSInteger i = 0; i < 500; i ++) {
         LGFeedItemModel *obj = [[LGFeedItemModel alloc] init];
         obj.user = [self arrayRandomItem:m.users];
-        obj.article = [self arrayRandomItem:m.articles];
         
+        if (arc4random() % 2) {
+            obj.article = [self arrayRandomItem:m.articles];
+        }
         if (arc4random() % 2) {
             obj.pics = [m.pics subarrayWithRange:NSMakeRange(0, arc4random() % m.pics.count)];
         }

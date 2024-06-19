@@ -163,14 +163,15 @@ cell 根布局是一个竖向布局容器, 把 cubeRenderModel 对应的 cube, �
 
 @end
 ```
-列表中实际渲染的 cell 类型是上面最复杂 cell 的任意子集, 其中 header, 文字, footer 是固定元素, 图片, 视频, 热评是可选元素,
-所以实际类型有 C31 + C32 + C33 + 1 = 8 种.<br>
-代码运行时, 实际创建的 cubeCellLayout 只有 4 中 (根据实际数据决定)
+列表中实际渲染的 cell 类型是上面最复杂 cell 的任意子集, 其中 header, footer 是固定元素. 文字, 图片, 视频, 热评是可选元素,
+所以实际类型有 C41 + C42 + C43 + C44 + 1 = 16 种.<br>
+代码运行时, 实际创建的 cubeCellLayout 只有 5 中 (根据实际数据决定)
+
 ```
-LGHeaderCube-LGArticleCube-LGHotCommentCube-LGBottomCube
-LGHeaderCube-LGArticleCube-LGPicCube-LGHotCommentCube-LGBottomCube
-LGHeaderCube-LGArticleCube-LGVideoCube-LGHotCommentCube-LGBottomCube
-LGHeaderCube-LGArticleCube-LGPicCube-LGVideoCube-LGHotCommentCube-LGBottomCube
+"LGHeaderCube-LGPicCube-LGHotCommentCube-LGBottomCube",
+"LGHeaderCube-LGArticleCube-LGPicCube-LGVideoCube-LGBottomCube","LGHeaderCube-LGArticleCube-LGVideoCube-LGHotCommentCube-LGBottomCube",
+"LGHeaderCube-LGPicCube-LGVideoCube-LGHotCommentCube-LGBottomCube",
+"LGHeaderCube-LGArticleCube-LGPicCube-LGVideoCube-LGHotCommentCube-LGBottomCube"
 ```
 可以看到, 在 YPPCubeTable 的帮助下, 我们既可以获得非常好的性能, 又可以解决传统写法所面临的问题.
 

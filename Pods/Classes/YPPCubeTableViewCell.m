@@ -50,7 +50,7 @@
                 return obj1.cubes.count - obj2.cubes.count;
             }];
             cacheLayout = layout;
-            NSLog(@"%@", layout.identifier);
+//            NSLog(@"%@", [tableView.regisitedLayouts valueForKeyPath:@"identifier"]);
         }
         cell = [tableView dequeueReusableCellWithIdentifier:cacheLayout.identifier];
     }
