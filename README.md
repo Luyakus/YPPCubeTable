@@ -83,8 +83,9 @@ cell 布局由一个一个的 cube 组成, 顺序定义在 cellViewModel
 }
 
 ```
-对 Cube 概念不熟悉的同学可以先看这里 [YPPCube](https://github.com/Luyakus/YPPCube)<br>
-CubeRenderModel 负责转换数据, 计算高度.
+
+cubeRenderModel 负责转换数据, 计算高度. 
+> 对 Cube 概念不熟悉的同学可以先看这里 [YPPCube](https://github.com/Luyakus/YPPCube)
 
 cell 根布局是一个竖向布局容器, 把 cubeRenderModel 对应的 cube, 按照 cubeRenderModel 算出的高度, 竖向排列在 cell 上, cellViewlModel 会把 cubeRenderModel 算出的高度加起来, 作为 cell 的高度,由于我们提前算好了高度, 所以滑动时的性能不会差
 
