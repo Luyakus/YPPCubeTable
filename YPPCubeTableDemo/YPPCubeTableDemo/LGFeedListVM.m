@@ -21,13 +21,31 @@
 }
 
 - (NSArray <LGFeedListCellVM *> *)generateCellVMs:(NSString *)jsonStr {
-    LGFeedListModel *m = [LGFeedListModel yy_modelWithJSON:jsonStr];
+    LGFeedDataModel *m = [LGFeedDataModel yy_modelWithJSON:jsonStr];
     NSMutableArray *arr = @[].mutableCopy;
     for (NSInteger i = 0; i < 100; i ++) {
-        LGFeedItemModel *obj = m.list[i%m.list.count];
+        LGFeedItemModel *obj = [[LGFeedItemModel alloc] init];
+        obj.user = [self arrayRandomItem:m.users];
+        obj.article = [self arrayRandomItem:m.articles];
+        
+        if (arc4random() % 2) {
+            obj.pics = [m.pics subarrayWithRange:NSMakeRange(0, arc4random() % m.pics.count)];
+        }
+        if (arc4random() % 2) {
+            obj.video = [self arrayRandomItem:m.videos];
+        }
+        if (arc4random() % 2) {
+            obj.hotComment = [self arrayRandomItem:m.hotComments];
+        }
+        
+        obj.articleInfo = [self arrayRandomItem:m.articleInfos];
         LGFeedListCellVM *cvm = [[LGFeedListCellVM alloc] initWithData:obj];
         [arr addObject:cvm];
     }
     return arr.copy;
+}
+
+- (id)arrayRandomItem:(NSArray *)sourceArray {
+    return sourceArray[arc4random() % sourceArray.count];
 }
 @end

@@ -23,7 +23,7 @@
     w.rootViewController = nav;
     [w makeKeyAndVisible];
     self.window = w;
-    [self.window addSubview:[[LGFPSLabel alloc] initWithFrame:CGRectMake(10, 40, 100, 50)]];
+    [self.window addSubview:[[LGFPSLabel alloc] initWithFrame:CGRectMake(10, 40, 60, 50)]];
     [NSUserDefaults.standardUserDefaults setValue:@(NO) forKey:@"_UIConstraintBasedLayoutLogUnsatisfiable"];
     return YES;
 }

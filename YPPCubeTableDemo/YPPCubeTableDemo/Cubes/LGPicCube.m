@@ -72,7 +72,7 @@
     if (data.pics.count <= 0) return nil;
     LGPicCubeRenderModel *rm = [LGPicCubeRenderModel new];
     NSInteger rowCount = (data.pics.count % KColumnCount == 0 ? 0 : 1) + data.pics.count / KColumnCount;
-    rm.cubeHeight = rowCount * KImageWidth + (rowCount - 1) * KSpace;
+    rm.cubeHeight = rowCount * KImageWidth + (rowCount - 1) * KSpace + 10;
     rm.pics = data.pics;
     return rm;
 }

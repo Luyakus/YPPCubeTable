@@ -50,7 +50,7 @@
     if (_videoView) return _videoView;
     _videoView = [[UIImageView alloc] initWithFrame:CGRectZero];
     _videoView.contentMode = UIViewContentModeScaleAspectFill;
-    _videoView.layer.cornerRadius = 8;
+    _videoView.layer.cornerRadius = 4;
     _videoView.layer.masksToBounds = YES;
     return _videoView;
 }

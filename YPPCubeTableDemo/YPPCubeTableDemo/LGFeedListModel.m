@@ -7,10 +7,11 @@
 #import <YYModel.h>
 #import "LGFeedListModel.h"
 
-@implementation LGFeedListModel
+@implementation LGFeedDataModel
 + (NSDictionary *)modelContainerPropertyGenericClass {
     return @{
-        @"list": LGFeedItemModel.class
+        @"users": LGFeedUserModel.class,
+        @"articleInfos": LGFeedArticleInfoModel.class
     };
 }
 @end

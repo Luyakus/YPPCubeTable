@@ -32,9 +32,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface LGFeedListModel : NSObject
-@property (nonatomic, strong) NSArray <LGFeedItemModel *> *list;
-
+@interface LGFeedDataModel : NSObject
+@property (nonatomic, strong) NSArray <LGFeedUserModel *> *users;
+@property (nonatomic, strong) NSArray <NSString *> *articles;
+@property (nonatomic, strong) NSArray <NSString *> *pics;
+@property (nonatomic, strong) NSArray <NSString *> *hotComments;
+@property (nonatomic, strong) NSArray <NSString *> *videos;
+@property (nonatomic, strong) NSArray <LGFeedArticleInfoModel *> *articleInfos;
 @end
 
 

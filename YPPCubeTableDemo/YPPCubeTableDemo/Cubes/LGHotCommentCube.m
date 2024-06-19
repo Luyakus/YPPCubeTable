@@ -19,7 +19,7 @@
     [super setupView:view];
     UIView *holder = [UIView new];
     holder.backgroundColor = [UIColor colorWithRed:0.6 green:0.6 blue:0.6 alpha:0.1];
-    holder.layer.cornerRadius = 8;
+    holder.layer.cornerRadius = 4;
     [view addSubview:holder];
     [holder mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(view).offset(10);
